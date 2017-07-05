@@ -1,0 +1,27 @@
+layout: false
+---
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Test Cross-domain communication using HTML5</title>
+    <script type="text/JavaScript">
+        function sendIt(){
+            window.parent.frames[0]
+                .postMessage(
+                    '我是otherfa派来的猴子',
+                    "http://106.15.95.246/project/cross1/father.html"
+                );
+        }
+        window.addEventListener("message", function( event ) {
+            alert("我是other，我收到了来自father的:‘"+event.data+"’");
+        }, false );
+        document.addEventListener("click",function(){
+            alert("点击了other")
+            sendIt()
+        })
+    </script>
+</head>
+<body>
+<div style="width: 100px;height: 200px;background: red">other</div>
+</body>
+</html>
