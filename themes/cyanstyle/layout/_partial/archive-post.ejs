@@ -1,0 +1,10 @@
+<article class=" post type-post status-publish format-standard hentry archive-type-<%= post.layout %> articlelist" style="display: flex;display: -webkit-flex;-webkit-justify-content: space-between;justify-content: space-between;-webkit-align-items: center;align-items: center;">
+    <a class="archive-article-title" href="<%- url_for(post.path) %>"
+       itemprop="url"><%= post.title %></a>
+    &nbsp;&nbsp;
+    <div>
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+    </div>
+    <span style="float: right">创建于<%- moment(post.date).format("YYYY-MM-DD HH:mm:ss") %></span>
+</article>

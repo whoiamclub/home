@@ -1,0 +1,10 @@
+<ul class="projectbox">
+    <% for (var i in theme.projects){ %>
+    <li class="projectli">
+        <a class="projecta" href="<%= theme.projects[i].projectaddress %>">
+            <img class="projectimg" src="<%= theme.projects[i].imagesrc %>" alt="<%= theme.projects[i].name %>">
+            <span class="projectspan">项目：<%= theme.projects[i].name %></span>
+        </a>
+    </li>
+    <% } %>
+</ul>

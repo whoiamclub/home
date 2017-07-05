@@ -1,0 +1,15 @@
+<% if (site.posts.length){ %>
+<aside class="widget">
+    <h3 class="widget-title">最近发表</h3>
+    <h4 class="widget-title">总共发表了<%= site.posts.length%>篇</h4>
+    <div class="widget-content">
+        <ul>
+            <% site.posts.sort('date', -1).limit(5).each(function(post){ %>
+            <li>
+                <a href="<%- url_for(post.path) %>"><%= post.title || '(no title)' %></a>
+            </li>
+            <% }) %>
+        </ul>
+    </div>
+</aside>
+<% } %>
