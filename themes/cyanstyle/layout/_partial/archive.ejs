@@ -31,7 +31,7 @@
     <div class="archives">
         <% } %>
         <% if (lastmonth != month || !sameyear){ %>
-        <% lastmonth = month; var realmonth = month.toString().length == 1 ? '0' + (month + 1) : month + 1; %>
+        <% lastmonth = month; var realmonth = month<9 ? '0' + (month + 1) : month + 1; %>
         <a href="<%- url_for('archives/' + year + '/' + realmonth) %>"
            style=" margin: 10px 0 10px 10px;display: block;"><%= realmonth %></a>
         <% } %>

@@ -24,10 +24,12 @@ widgets:
 - category
 - tag
 #- tagcloud
+- news
 
 # Miscellaneous
 google_analytics:  #好像沒用了，代碼裏注釋掉了
-duoshuo_shortname: 
+changyanAppId: cyt6d5PUS
+changyanConf: prod_ae46027aa49ac2fe7a466e24ef337d1f
 rss: /atom.xml
 google_site_verification: #好像沒用了，代碼裏注釋掉了
 baidu_site_verification: nJtPfFjytu

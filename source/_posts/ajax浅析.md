@@ -1,6 +1,6 @@
 ---
 title: ajax浅析
-date: 2017-07-02 13:32:29
+date: 2016-10-02 13:32:00
 tags: [javascript]
 categories: 前端
 description: 数据交互与dom操作并列前端两大基石
@@ -18,22 +18,21 @@ AJAX 是一种用于创建快速动态网页的技术。
 ## 创建 XMLHttpRequest 对象
 所有现代浏览器（IE7+、Firefox、Chrome、Safari 以及 Opera）均内建 XMLHttpRequest 对象。
 创建 XMLHttpRequest 对象的语法：
->variable=new XMLHttpRequest();
+>var variable=new XMLHttpRequest();
 
 Internet Explorer （IE5 和 IE6）使用 ActiveX 对象：
->variable=new ActiveXObject("Microsoft.XMLHTTP");
+>var variable=new ActiveXObject("Microsoft.XMLHTTP");
 
 ``` bash
 //创建
 var xmlhttp;
-if (window.XMLHttpRequest)
-  {// code for IE7+, Firefox, Chrome, Opera, Safari
+if (window.XMLHttpRequest){
+// code for IE7+, Firefox, Chrome, Opera, Safari
   xmlhttp=new XMLHttpRequest();
-  }
-else
-  {// code for IE6, IE5
+}else{
+// code for IE6, IE5
   xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-  }
+}
 ```
 
 ## XMLHttpRequest对象用于和服务器交换数据
@@ -64,8 +63,8 @@ readyState	 存有 XMLHttpRequest 的状态。从 0 到 4 发生变化。
 status	
 >200: "OK"
 >300~307: 重定向类
->40*: 请求错误
->50*: 服务器错误
+>40X: 请求错误
+>50X: 服务器错误
 
 ## 服务器响应
 >responseText	获得字符串形式的响应数据。
@@ -111,7 +110,7 @@ xmlHttp.send(data);
 
 ``` bash
 <script type="text/javascript">
-	function ajax(config) {
+    function ajax(config) {
 
 	  	var xhr = null;
 	  	try{
