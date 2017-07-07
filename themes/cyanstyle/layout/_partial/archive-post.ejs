@@ -5,7 +5,6 @@
     <div>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
-        <span id = "<%= post.permalink%>" class = "cy_cmt_count" ></span>
     </div>
     <span style="float: right">创建于<%- moment(post.date).format("YYYY-MM-DD HH:mm:ss") %></span>
 </article>

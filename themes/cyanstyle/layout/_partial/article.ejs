@@ -1,7 +1,8 @@
-<article  id="<%= post.layout %>-<%= post.slug %>" class="<%= post.layout %>-<%= post.slug %> post type-post status-publish format-standard hentry" >
+<article id="<%= post.layout %>-<%= post.slug %>"
+         class="<%= post.layout %>-<%= post.slug %> post type-post status-publish format-standard hentry">
     <!--<%- partial('post/gallery') %>-->
 
-      <header class="entry-header" >
+    <header class="entry-header">
         <% if (post.link || post.title){ %>
         <%- partial('post/title', {class_name: 'article-title'}) %>
         <% } %>
@@ -11,31 +12,34 @@
             <% } %>
             <!--<a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more"><%= theme.share %></a>-->
         </div><!-- .comments-link -->
-      </header><!-- .entry-header -->
+    </header><!-- .entry-header -->
 
     <div class="entry-content">
-      <% if (post.excerpt && index){ %>
+        <% if (post.excerpt && index){ %>
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
-          <p class="article-more-link">
+        <p class="article-more-link">
             <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav">→</span></a>
-          </p>
+        </p>
         <% } %>
-      <% } else { %>
+        <% } else { %>
         <%- post.content %>
-      <% } %>
+        <% } %>
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-    <%- partial('post/category') %>
-    <%- partial('post/tag') %>
-
+        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+        <%- partial('post/category') %>
+        <%- partial('post/tag') %>
+        <% if (post.excerpt && index){ %>
+        <% if (theme.excerpt_link){ %>
+        <span id="<%= post.permalink %>" class="cy_cmt_count"></span>
+        <% } %>
+        <% } %>
     </footer>
 </article>
 
 <% if (!index){ %>
-    <%- partial('post/nav') %>
+<%- partial('post/nav') %>
 <% } %>
-
 <%- partial('comment') %>
