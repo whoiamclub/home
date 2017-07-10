@@ -199,12 +199,17 @@ background:背景占据元素的所有内容区域，包括 padding 和 border�
 
 #### 6.CSS 盒子模型
 
+    Css盒模型magin外边距+border边框+padding内边距+width内容
+    当设置background颜色的时候，会覆盖border+padding+width;
+
     width浏览器的兼容性问题
     根据 W3C 的规范，元素内容占据的空间是由 width 属性设置的，
+    w3c中的盒子模型的宽仅包括content;
     而内容周围的 padding 和 border 值是另外计算的。
     不幸的是，IE5.X 和 6 在怪异模式中使用自己的非标准模型。
     这些浏览器的 width 属性不是内容的宽度，
     而是内容、内边距和边框的宽度的总和。
+    ie怪异盒模型的宽包括border*2+padding*2+content;
     ···
     解决方式
     不要给元素添加具有指定宽度的内边距，
