@@ -17,6 +17,7 @@ categories: 前端
             pageHeight = document.body.clinetHeight;
         }
     }
+<!--more-->
 #### 2.location对象
 
 属性名

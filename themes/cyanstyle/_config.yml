@@ -58,3 +58,7 @@ projects:
           name: postMessage
           imagesrc: ./cross1/images/cross1.jpg
           projectaddress: ./cross1/index.html
+  project5:
+          name: 事件冒泡与捕获
+          imagesrc: ./event1/images/event1.jpg
+          projectaddress: ./event1/index.html
