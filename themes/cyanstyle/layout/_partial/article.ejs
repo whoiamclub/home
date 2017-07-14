@@ -13,7 +13,7 @@
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
         <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav">→</span></a>
+            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav"></span></a>
         </p>
         <% } %>
         <% } else { %>
