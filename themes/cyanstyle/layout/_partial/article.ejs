@@ -6,12 +6,6 @@
         <% if (post.link || post.title){ %>
         <%- partial('post/title', {class_name: 'article-title'}) %>
         <% } %>
-        <div class="comments-link">
-            <% if (post.comments && theme.duoshuo_shortname){ %>
-            <a href="<%- url_for(post.path) %>#comments" class="leave-reply"><%= theme.reply %></a>
-            <% } %>
-            <!--<a href="javascript:void(0);" data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="leave-reply bdsharebuttonbox" data-cmd="more"><%= theme.share %></a>-->
-        </div><!-- .comments-link -->
     </header><!-- .entry-header -->
 
     <div class="entry-content">
@@ -31,6 +25,17 @@
         <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
         <%- partial('post/category') %>
         <%- partial('post/tag') %>
+        <% if (post.excerpt && index) { %>
+        <div class="comments-link">
+            <% if (post.comments && theme.changyanAppId){ %>
+            评论：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_count" ></span>
+            阅读：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_participate" ></span>
+            <script id="cy_cmt_num" src="http://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=<%= theme.changyanAppId %>">
+            </script>
+            &nbsp;<a href="<%- url_for(post.path) %>#comments" class="leave-reply" style="color: rgb(81, 165, 168);"><%= theme.reply %></a>
+            <% } %>
+        </div><!-- .comments-link -->
+        <% }%>
         <% if (post.excerpt && index){ %>
         <% if (theme.excerpt_link){ %>
         <span id="<%= post.permalink %>" class="cy_cmt_count"></span>
