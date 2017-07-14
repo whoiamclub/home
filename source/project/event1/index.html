@@ -29,7 +29,7 @@ layout: false
 	<ul id="myul">
 		<li>事件冒泡：事件开始由最具体的元素开始接受，然后逐级向上传播到较为不具体的节点</li>
 		<li>事件捕获：事件开始由最不具体的元素开始接受，然后逐级向上传播到较为具体的节点</li>
-		<li>目标元素：event.target</li>
+		<li>目标元素：event.target || event.srcElement</li>
 		<li>停止事件冒泡
 			if ( e && e.stopPropagation ){
 			//因此它支持W3C的stopPropagation()方法

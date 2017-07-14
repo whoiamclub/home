@@ -17,8 +17,8 @@ fancybox: false
 
 # Sidebar
 widgets:
+- search
 - author
-#- search
 #- music
 - recent_posts
 - category
@@ -32,7 +32,7 @@ changyanAppId: cyt6d5PUS
 changyanConf: prod_ae46027aa49ac2fe7a466e24ef337d1f
 rss: /atom.xml
 google_site_verification: #好像沒用了，代碼裏注釋掉了
-baidu_site_verification: nJtPfFjytu
+baidu_site_verification: 43om1SQhig
 favicon: /css/images/favicon.ico
 music: true #使用网易云音乐
 twitter: #代碼裏注釋掉了
