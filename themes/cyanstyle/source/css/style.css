@@ -1856,10 +1856,10 @@ img#wpstats {
         line-height: 112px;
     }
 
-    .displaynone{
-      display: none;
+    .displaynone {
+        display: none;
     }
-    
+
     .projectimg {
         width: 150px;
         height: 112px;
@@ -2125,7 +2125,7 @@ img#wpstats {
 
     .projectimg {
         width: 200px;
-        height:150px;
+        height: 150px;
         margin-bottom: 5px;
     }
 
@@ -2285,11 +2285,27 @@ img#wpstats {
         margin-left: 3.57142857rem;
     }
 }
-.site-content article.articlelist{
+
+.site-content article.articlelist {
     margin: 0 0 10px 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.04);
 }
-a.archive-article-title{
+
+a.archive-article-title {
     color: #000000;
+}
+
+.bdcs-container .bdcs-search {
+    width: 100% !important;
+}
+
+.bdcs-container .bdcs-search-form-input {
+    width: calc(100% - 70px) !important;
+}
+
+.bdcs-container .bdcs-search-form-submit {
+    outline: none;
+    border-radius: 3px;
+    text-align: center;
 }
