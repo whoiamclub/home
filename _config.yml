@@ -3,11 +3,11 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 阿木隆
-subtitle: 北风骤起，艳阳高照
-description: 这是阿木隆的博客
+title: 北风骤起，艳阳高照
+subtitle:
+description: 这是阿木隆的博客,
 author: 阿木隆
-keywords: 阿木隆
+keywords: 阿木隆,博客,JavaScript,node,react,css,html5,html,hexo,前端,北风骤起,艳阳高照,源码,百度,站长,数梦,杭州,github,antd,dva
 language:
 timezone:
 

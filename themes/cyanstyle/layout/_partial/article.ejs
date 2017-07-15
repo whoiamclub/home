@@ -13,7 +13,7 @@
         <%- post.excerpt %>
         <% if (theme.excerpt_link){ %>
         <p class="article-more-link">
-            <a href="<%- url_for(post.path) %>#more" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav"></span></a>
+            <a href="<%= post.permalink %>" class="more-link"><%= theme.excerpt_link %> <span class="meta-nav"></span></a>
         </p>
         <% } %>
         <% } else { %>
@@ -30,17 +30,12 @@
             <% if (post.comments && theme.changyanAppId){ %>
             评论：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_count" ></span>
             阅读：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_participate" ></span>
-            <script id="cy_cmt_num" src="http://changyan.sohu.com/upload/plugins/plugins.list.count.js?clientId=<%= theme.changyanAppId %>">
-            </script>
-            &nbsp;<a href="<%- url_for(post.path) %>#comments" class="leave-reply" style="color: rgb(81, 165, 168);"><%= theme.reply %></a>
-            <% } %>
+            &nbsp;<a href="<%= post.permalink %>#comments" class="leave-reply" style="color: rgb(81, 165, 168);"><%= theme.reply %></a>
+            <% }%>
         </div><!-- .comments-link -->
+        <% }else{%>
+        <p>本文永久链接：<a href="<%= post.permalink %>"> <%= post.permalink %></a></p>
         <% }%>
-        <% if (post.excerpt && index){ %>
-        <% if (theme.excerpt_link){ %>
-        <span id="<%= post.permalink %>" class="cy_cmt_count"></span>
-        <% } %>
-        <% } %>
     </footer>
 </article>
 
