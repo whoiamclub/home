@@ -24,7 +24,7 @@ widgets:
 - category
 - tag
 #- tagcloud
-- news
+#- news
 
 # Miscellaneous
 google_analytics:  #好像沒用了，代碼裏注釋掉了
