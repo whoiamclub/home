@@ -3,7 +3,7 @@
     <script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script>
   </div>
   <script>
-    var ipJson = eval('(' + document.querySelector("#getUserIp").textContent.trim() + ')');
+    var ipJson = eval('(' + document.getElementById("getUserIp").innerText.replace(/ /g,"") + ')');
     document.write("您来自：" + ipJson.ip + "，所在区域：" + ipJson.address)
   </script>
   <p><a href="<%= config.url %>"><%= date(new Date(), 'YYYY') %> Copyright © <%= config.author || config.title %>  当前版本1.0 </a></p>

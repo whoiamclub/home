@@ -47,18 +47,18 @@ projects:
     imagesrc: ./threejs/image/threejs.png
     projectaddress: ./threejs/index.html
   project2:
-      name: 旋转的方块
-      imagesrc: ./project1/image/project1.png
-      projectaddress: ./project1/index.html
+    name: 旋转的方块
+    imagesrc: ./project1/image/project1.png
+    projectaddress: ./project1/index.html
   project3:
-        name: 抖动的线
-        imagesrc: ./canvas1/image/canvas1.png
-        projectaddress: ./canvas1/index.html
+    name: 抖动的线
+    imagesrc: ./canvas1/image/canvas1.png
+    projectaddress: ./canvas1/index.html
   project4:
-          name: postMessage
-          imagesrc: ./cross1/images/cross1.jpg
-          projectaddress: ./cross1/index.html
+    name: postMessage
+    imagesrc: ./cross1/images/cross1.jpg
+    projectaddress: ./cross1/index.html
   project5:
-          name: 事件冒泡与捕获
-          imagesrc: ./event1/images/event1.jpg
-          projectaddress: ./event1/index.html
+    name: 事件冒泡与捕获
+    imagesrc: ./event1/images/event1.jpg
+    projectaddress: ./event1/index.html
