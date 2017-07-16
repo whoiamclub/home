@@ -1,4 +1,6 @@
 <footer id="colophon" role="contentinfo">
+  <div><a target="_blank"  href="https://verify.nic.xin/xinDetail/xinAuthInfoDetail?token=6dd3c6c4c76844ef6d19ef8bb1927d6b"><img src="https://verify.nic.xin/api/domain/showCreditLogo.do?logoToken=d86b10f302e957c7e55534b451b60a71"></a>
+  </div>
   <div id="getUserIp" style="display:none">
     <script type="text/javascript" src="http://ip.chinaz.com/getip.aspx"></script>
   </div>
@@ -9,7 +11,7 @@
   <div>
     <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260942557'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260942557%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
   </div>
-  <p><a href="<%= config.url %>"><%= date(new Date(), 'YYYY') %> Copyright © <%= config.author || config.title %></a> <a
-      href="<%= config.url %>/version">当前版本1.1</a> </p>
+  <p><%= date(new Date(), 'YYYY') %> Copyright © <a href="<%= config.url %>/about" target="_blank"> <%= config.author || config.title %></a> <a
+      href="<%= config.url %>/version" target="_blank">当前版本1.2</a> </p>
   <p>浙ICP备17030325号</p>
 </footer>

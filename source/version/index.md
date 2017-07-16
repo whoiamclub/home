@@ -1,7 +1,8 @@
 ---
 title: 版本记录
+comments: false
 ---
-
+<style>#primary{width:100%}#secondary{display:none}.site-content article {border-bottom:none}</style>
 #### 2017年06月29日 version-0.1
 >基于HEXO搭建静态博客
 
@@ -45,3 +46,9 @@ title: 版本记录
 
 #### 2017年07月15日 version-1.1
 >使用Swiftype站内搜索代替百度
+
+#### 2017年07月16日 version-1.2
+>取消导航[关于我]，移至底部入口“阿木隆”
+>增加待建[你说我说]
+>[作品]改名为“举个栗子”，[rss]改名为“订了个阅”
+>作者栏增加个人、学校、公司链接

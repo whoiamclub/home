@@ -21,22 +21,24 @@
         <% } %>
     </div><!-- .entry-content -->
 
-    <footer class="entry-meta">
-        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-        <%- partial('post/category') %>
-        <%- partial('post/tag') %>
-        <% if (post.excerpt && index) { %>
-        <div class="comments-link">
-            <% if (post.comments && theme.changyanAppId){ %>
-            评论：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_count" ></span>
-            阅读：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_participate" ></span>
-            &nbsp;<a href="<%= post.permalink %>#comments" class="leave-reply" style="color: rgb(81, 165, 168);"><%= theme.reply %></a>
-            <% }%>
-        </div><!-- .comments-link -->
-        <% }else{%>
-        <p>本文永久链接：<a href="<%= post.permalink %>"> <%= post.permalink %></a></p>
-        <% }%>
-    </footer>
+    <% if (post.comments){%>
+      <footer class="entry-meta">
+          <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+          <%- partial('post/category') %>
+          <%- partial('post/tag') %>
+          <% if (post.excerpt && index) { %>
+          <div class="comments-link">
+              <% if (post.comments && theme.changyanAppId){ %>
+              评论：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_count" ></span>
+              阅读：<span id = "sourceId::<%= post.permalink %>" class = "cy_cmt_participate" ></span>
+              &nbsp;<a href="<%= post.permalink %>#comments" class="leave-reply" style="color: rgb(81, 165, 168);"><%= theme.reply %></a>
+              <% }%>
+          </div><!-- .comments-link -->
+          <% }else{%>
+          <p>本文永久链接：<a href="<%= post.permalink %>"> <%= post.permalink %></a></p>
+          <% }%>
+      </footer>
+    <% }%>
 </article>
 
 <% if (!index){ %>

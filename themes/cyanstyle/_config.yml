@@ -2,9 +2,9 @@
 menu:
   主页: /
   文章列表: /archives
-  关于我: /about
-  作品: /project
-  rss: /atom.xml
+  举个栗子: /project
+  你说我说: /soso
+  订了个阅: /atom.xml
 
 
 # Content
@@ -13,7 +13,7 @@ prev: 上一页
 next: 下一页
 reply: 评论
 share: 分享
-fancybox: false
+fancybox: true
 
 # Sidebar
 widgets:
@@ -33,6 +33,7 @@ changyanConf: prod_ae46027aa49ac2fe7a466e24ef337d1f
 rss: /atom.xml
 google_site_verification: #好像沒用了，代碼裏注釋掉了
 baidu_site_verification: 43om1SQhig
+_360_site_verification: 09e51ecaa091dc6562d9b66976940fc8
 favicon: /css/images/favicon.ico
 music: true #使用网易云音乐
 twitter: #代碼裏注釋掉了
