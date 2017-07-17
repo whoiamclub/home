@@ -1,8 +1,8 @@
 ---
-title: Say ty 2 hexo
-date: 2016-01-27 12:31:31
+title: hello-world
+date: 2016-12-18 12:31:31
 tags: [hexo]
-categories: 前端
+categories: 博客
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
 

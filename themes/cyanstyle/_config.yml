@@ -25,6 +25,7 @@ widgets:
 - tag
 #- tagcloud
 #- news
+- friend
 
 # Miscellaneous
 google_analytics:  #好像沒用了，代碼裏注釋掉了
@@ -63,3 +64,11 @@ projects:
     name: 事件冒泡与捕获
     imagesrc: ./event1/images/event1.jpg
     projectaddress: ./event1/index.html
+#friendlink
+friendlinks:
+  yingliwang:
+    link: http://www.chinayingli.cn/
+    keyword: 电商
+  daqianduan:
+    link: http://www.daqianduan.com/
+    keyword: 大前端

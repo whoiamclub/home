@@ -1,14 +1,14 @@
 ---
-title: html标签(html5支持标签)
-date: 2017-07-07 13:34:56
-tags: [html]
-categories: 前端
+title: 前端三剑客-html标签全解
+date: 2017-06-30 22:36:39
+tags: [html,初级]
+categories: 前端面试圣经初级
 ---
 
-
+html标签是前端界面的骨架，作为一个前端开发我们对每个标签的熟悉程度就应该如同骨科医生对人体每一块骨头的熟知，哪怕他在不常见。
+<!-- more -->
 #### 文档标签
 &lt;!DOCTYPE&gt; 	定义文档类型。
-<!-- more -->
 
     1.HTML 5
     <!DOCTYPE html>
