@@ -1,15 +1,15 @@
 <header id="masthead" class="site-header" role="banner">
     <hgroup>
       <h1 class="site-title">
-        <a href="<%- url_for() %>" title="<%= config.title %>" rel="home"><%= config.title %></a>
+        <a href="<%= config.url %>" title="<%= config.title %>" rel="home" style="background:linear-gradient(-45deg ,#880808 ,#000000);;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background: #ffffff\0;"><%= config.title %></a>
       </h1>
       <% if (theme.subtitle){ %>
         <h2 class="site-description">
-          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+          <a href="<%= config.url %>" id="subtitle"><%= theme.subtitle %></a>
         </h2>
       <% } else { %>
-        <script type="text/javascript" src="http://api.hitokoto.us/rand?encode=js&charset=utf-8"></script>
-        <h2 class="site-description"><script>hitokoto();</script></h2>
+        <script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js"></script>
+        <h2 class="site-description"><script>lwlhitokoto();</script></h2>
       <% } %>
         <!--一言API。貌似已经失效了-->
     </hgroup>
@@ -20,7 +20,7 @@
             <div class="menu-main-container">
                 <ul id="menu-main" class="nav-menu">
                 <% for (var i in theme.menu){ %>
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%- url_for(theme.menu[i]) %>"><%= i %></a></li>
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="<%= config.url+theme.menu[i] %>"><%= i %></a></li>
                 <% } %>
                 </ul>
             </div>

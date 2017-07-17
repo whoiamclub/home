@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: http://www.amulong.xin/baidusitemap.xml
+Sitemap: http://www.amulong.xin/sitemap.xml
