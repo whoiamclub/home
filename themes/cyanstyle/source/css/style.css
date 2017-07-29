@@ -655,7 +655,7 @@ a:hover {
 
 /* Backgroud image */
 #bg {
-    background-image: url("images/soft_wallpaper.png");
+    background-image: url("images/body.jpg");
     background-color: #050a10;
     background-attachment: fixed;
     background-repeat: no-repeat;
